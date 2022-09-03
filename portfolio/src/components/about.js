@@ -11,6 +11,7 @@ export default function About() {
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 213.699 213.699"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
             className="p-10"
           >
             <defs>
