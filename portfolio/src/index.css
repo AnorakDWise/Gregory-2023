@@ -43,12 +43,12 @@ body {
 
 #rotate {
   transform: rotateX(15deg);
-  transition: all 150ms ease-in-out 100ms;
+  transition: all 100ms ease-in-out;
 }
 
 #rotate:hover {
   transform: rotateX(5deg);
-  transition: ease-in-out 0.15s all;
+  transition: ease-in-out 100ms all;
 }
 
 .new {
