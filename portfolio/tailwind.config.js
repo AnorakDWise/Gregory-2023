@@ -14,6 +14,7 @@ module.exports = {
       dropShadow: {
         superpowerShadow: "0 0 10px rgba(124, 144, 153, 0.5)",
         machineLearningShadow: "0 0 10px rgba(136, 19, 55, 0.75)",
+        whiteShadow: "0 0 10px #e7e5e480",
       },
     },
   },
