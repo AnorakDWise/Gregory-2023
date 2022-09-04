@@ -9,7 +9,8 @@ export default function About() {
       <div className="container h-4/6">
         <div className="flex flex-wrap flex-row justify-center items-start select-none">
           <div
-            className="w-48 h-48 flex justify-center items-center frostedGlass"
+            className="w-48 h-48 flex flex-col justify-center items-center frostedGlass border-solid border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:drop-shadow-mathShadow hover:border-stone-200 group"
+            id="rotate"
             data-aos="flip-right"
             data-aos-once="false"
             data-aos-delay="100"
@@ -17,17 +18,18 @@ export default function About() {
             data-aos-duration="1000"
             data-aos-easeing="ease-in-out"
           >
-            <h1 className="IBMPlexMonoItalicMedium text-center text-7xl p-5 drop-shadow-whiteShadow">
-              fx
+            <h1 className="IBMPlexMonoItalicMedium text-center text-8xl -mt-4 p-5 drop-shadow-whiteShadow">
+              f<span className="text-6xl">x</span>
             </h1>
           </div>
 
           <div
-            className="w-[25rem] h-48 frostedGlass flex flex-col justify-center items-start"
+            className="w-[25rem] h-48 frostedGlass flex flex-col justify-center items-start border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:"
             data-aos="flip-right"
             data-aos-once="false"
             data-aos-delay="300"
             data-aos-mirror="false"
+            id="rotate"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
@@ -43,9 +45,10 @@ export default function About() {
           </div>
 
           <div
-            className="w-[25rem] h-[25rem] frostedGlass"
+            className="w-[25rem] h-[25rem] frostedGlass border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:"
             data-aos="flip-right"
             data-aos-once="false"
+            id="rotate"
             data-aos-delay="500"
             data-aos-mirror="false"
             data-aos-duration="1000"
@@ -66,9 +69,10 @@ export default function About() {
 
           <div className="flex -mt-[13rem]">
             <div
-              className="w-[25rem] h-[25rem] frostedGlass"
+              className="w-[25rem] h-[25rem] frostedGlass border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:"
               data-aos="flip-right"
               data-aos-once="false"
+              id="rotate"
               data-aos-delay="300"
               data-aos-mirror="false"
               data-aos-duration="1000"
@@ -83,28 +87,32 @@ export default function About() {
                 </h1>
                 <div>
                   <h2 className="text-3xl font-medium text-stone-900">
-                    New experiences
+                    <span className="new">New</span> experiences
                   </h2>
                   <h2 className="text-3xl font-medium text-stone-900 opacity-80">
-                    New exciting things
+                    <span className="new">New</span> exciting things
                   </h2>
                   <h2 className="text-3xl font-medium text-stone-900 opacity-60">
-                    New superpowers
+                    <span className="new">New</span> superpowers
                   </h2>
                   <h2 className="text-3xl font-medium text-stone-900 opacity-40">
-                    New skills
+                    <span className="new">New</span> skills
                   </h2>
                   <h2 className="text-3xl font-medium bg-gradient-to-t from-transparent to-[#1c19173b] text-transparent bg-clip-text">
-                    New habits
+                    <span className="bg-gradient-to-t from-transparent to-[#facc15bf] bg-clip-text">
+                      New
+                    </span>
+                    habits
                   </h2>
                 </div>
               </div>
             </div>
 
             <div
-              className="rounded-3xl bg-flower bg-cover bg-center m-2 w-48 h-[25rem]"
+              className="rounded-3xl bg-flower bg-cover bg-center m-2 w-48 h-[25rem] border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:"
               data-aos="flip-right"
               data-aos-once="false"
+              id="rotate"
               data-aos-delay="500"
               data-aos-mirror="false"
               data-aos-duration="1000"
@@ -120,11 +128,12 @@ export default function About() {
           </div>
 
           <div
-            className="frostedGlass w-48 h-48 flex justify-center items-center"
+            className="frostedGlass w-48 h-48 flex justify-center items-center border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:"
             data-aos="flip-right"
             data-aos-once="false"
             data-aos-delay="700"
             data-aos-mirror="false"
+            id="rotate"
             data-aos-duration="1000"
             data-aos-easing="ease-in-out"
           >
@@ -132,9 +141,10 @@ export default function About() {
           </div>
 
           <div
-            className="frostedGlass w-48 h-48 flex justify-center items-center"
+            className="frostedGlass w-48 h-48 flex justify-center items-center border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:"
             data-aos="flip-right"
             data-aos-once="false"
+            id="rotate"
             data-aos-delay="900"
             data-aos-mirror="false"
             data-aos-duration="1000"

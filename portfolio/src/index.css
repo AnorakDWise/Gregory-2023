@@ -41,13 +41,17 @@ body {
   color: transparent;
 }
 
-#card {
-  padding: 0 !important;
-  margin: 0.5rem !important;
-  width: 12rem !important;
-  height: 12rem !important;
-  background: none !important;
-  box-sizing: border-box !important;
-  box-shadow: none !important;
-  border: none !important;
+#rotate {
+  transform: rotateX(15deg);
+  transition: all 150ms ease-in-out 100ms;
+}
+
+#rotate:hover {
+  transform: rotateX(5deg);
+  transition: ease-in-out 0.15s all;
+}
+
+.new {
+  color: #facc15;
+  filter: drop-shadow(0 0 10px rgba(250, 204, 21, 0.75));
 }
