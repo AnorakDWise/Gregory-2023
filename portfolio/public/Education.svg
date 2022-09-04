@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="921" height="921" viewBox="0 0 921 921">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.737" y1="0.774" x2="1" y2="0.958" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#57534e"/>
+      <stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+    <clipPath id="clip-Education">
+      <rect width="921" height="921"/>
+    </clipPath>
+  </defs>
+  <g id="Education" clip-path="url(#clip-Education)">
+    <path id="icons8_flying_mortarboard" d="M13.516,2.948A10.809,10.809,0,0,0,6.255,21.482L111,123.269a10.809,10.809,0,0,0,5.658,2.913l124.1,21.826v63.9a21.509,21.509,0,0,0-10.808,18.618c0,11.943,21.615,43.231,21.615,43.231s21.616-31.288,21.616-43.231A21.509,21.509,0,0,0,262.369,211.9V151.618a10.809,10.809,0,0,0,7.536-18.533L165.163,31.3a10.809,10.809,0,0,0-5.658-2.892L15.669,3.1A10.809,10.809,0,0,0,13.516,2.948Zm22.8,77.892L7.437,137.348s34.017,17.375,67.781,63.243c56.957.508,90.98,17.9,90.98,17.9l28.918-56.572-82.2-14.459a32.416,32.416,0,0,1-16.993-8.676Z" transform="translate(578.158 53.583)" fill="url(#linear-gradient)"/>
+  </g>
+</svg>
