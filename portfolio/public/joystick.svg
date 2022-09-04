@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="195.16" height="204.031" viewBox="0 0 195.16 204.031">
-  <defs>
-    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="0.525" gradientUnits="objectBoundingBox">
-      <stop offset="0" stop-color="#991b1b"/>
-      <stop offset="1" stop-color="#1c1917"/>
-    </linearGradient>
-  </defs>
-  <path id="icons8_joystick" d="M101.58,3a35.455,35.455,0,0,0-8.871,69.789v38.238A26.691,26.691,0,0,0,76.6,127.193h49.968a26.691,26.691,0,0,0-16.113-16.165V72.806A35.464,35.464,0,0,0,101.58,3Zm-62.1,106.451a17.737,17.737,0,0,0-17.742,17.742H57.225A17.737,17.737,0,0,0,39.484,109.451ZM21.742,144.935A17.737,17.737,0,0,0,4,162.676v26.613a17.737,17.737,0,0,0,17.742,17.742H181.418a17.737,17.737,0,0,0,17.742-17.742V162.676a17.737,17.737,0,0,0-17.742-17.742Z" transform="translate(-4 -3)" fill="url(#linear-gradient)"/>
-</svg>

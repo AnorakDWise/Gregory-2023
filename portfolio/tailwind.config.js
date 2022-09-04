@@ -5,9 +5,6 @@ module.exports = {
     extend: {
       backgroundImage: {
         aboutBack: "url('../public/aboutBack.svg')",
-        terminalElement: "url('../public/terminalBack.svg')",
-        machineLearningElement: "url('../public/ML.svg')",
-        eduElement: "url('../public/Education.svg')",
         flower: "url('../public/flower.webp')",
       },
 
