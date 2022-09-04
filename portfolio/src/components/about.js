@@ -8,7 +8,14 @@ export default function About() {
     >
       <div className="container h-4/6">
         <div className="flex flex-wrap flex-row justify-center items-start">
-          <div className="w-48 h-48 flex justify-center items-center frostedGlass">
+          <div
+            className="w-48 h-48 flex justify-center items-center frostedGlass"
+            data-aos="flip-right"
+            data-aos-once="false"
+            data-aos-delay="100"
+            data-aos-mirror="false"
+            data-aos-duration="1000"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 213.699 190"
@@ -36,7 +43,15 @@ export default function About() {
               />
             </svg>
           </div>
-          <div className="w-[25rem] h-48 frostedGlass flex justify-center items-center">
+          <div
+            className="w-[25rem] h-48 frostedGlass flex justify-center items-center"
+            data-aos="flip-right"
+            data-aos-once="false"
+            data-aos-delay="300"
+            data-aos-mirror="false"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <div className="bg-terminalElement w-full h-full bg-cover">
               <h2 className="p-5 font-medium text-xl text-stone-300">
                 coding is my...
@@ -46,7 +61,15 @@ export default function About() {
               </h1>
             </div>
           </div>
-          <div className="w-[25rem] h-[25rem] frostedGlass">
+          <div
+            className="w-[25rem] h-[25rem] frostedGlass"
+            data-aos="flip-right"
+            data-aos-once="false"
+            data-aos-delay="500"
+            data-aos-mirror="false"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <div className="bg-machineLearningElement bg-cover w-full h-full absolute z-1"></div>
             <div className="flex flex-col justify-center align-center w-full h-full relative z-2 -mt-16">
               <h1 className="text-center font-medium text-xl text-stone-300">
@@ -57,41 +80,68 @@ export default function About() {
               </h2>
             </div>
           </div>
-          <div className="w-[25rem] h-[25rem] frostedGlass -translate-y-[13rem]">
-            <div className="bg-eduElement bg-cover w-full h-full absolute z-1">
-              <div className="flex flex-col justify-center items-center h-full w-full">
-                <h1 className="text-2xl font-medium pb-2 text-stone-900">
-                  always trying to learn
-                </h1>
-                <div>
-                  <h2 className="text-3xl font-medium text-stone-900">
-                    New experiences
-                  </h2>
-                  <h2 className="text-3xl font-medium text-stone-900 opacity-80">
-                    New exciting things
-                  </h2>
-                  <h2 className="text-3xl font-medium text-stone-900 opacity-60">
-                    New superpowers
-                  </h2>
-                  <h2 className="text-3xl font-medium text-stone-900 opacity-40">
-                    New skills
-                  </h2>
-                  <h2 className="text-3xl font-medium text-stone-900 opacity-20">
-                    New habits
-                  </h2>
+          <div className="flex -mt-[13rem]">
+            <div
+              className="w-[25rem] h-[25rem] frostedGlass"
+              data-aos="flip-right"
+              data-aos-once="false"
+              data-aos-delay="300"
+              data-aos-mirror="false"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
+              <div className="bg-eduElement bg-cover w-full h-full absolute z-1">
+                <div className="flex flex-col justify-center items-center h-full w-full">
+                  <h1 className="text-2xl font-medium pb-2 text-stone-900">
+                    always trying to learn
+                  </h1>
+                  <div>
+                    <h2 className="text-3xl font-medium text-stone-900">
+                      New experiences
+                    </h2>
+                    <h2 className="text-3xl font-medium text-stone-900 opacity-80">
+                      New exciting things
+                    </h2>
+                    <h2 className="text-3xl font-medium text-stone-900 opacity-60">
+                      New superpowers
+                    </h2>
+                    <h2 className="text-3xl font-medium text-stone-900 opacity-40">
+                      New skills
+                    </h2>
+                    <h2 className="text-3xl font-medium text-stone-900 opacity-20">
+                      New habits
+                    </h2>
+                  </div>
                 </div>
               </div>
             </div>
+            <div
+              className="rounded-3xl bg-flower bg-cover bg-center m-2 w-48 h-[25rem]"
+              data-aos="flip-right"
+              data-aos-once="false"
+              data-aos-delay="500"
+              data-aos-mirror="false"
+              data-aos-duration="1000"
+              data-aos-easing="ease-in-out"
+            >
+              <h2 className="text-stone-300 font-medium text-md pl-2 pt-2 drop-shadow-md -mb-1">
+                Oh yeah,
+              </h2>
+              <h2 className="text-stone-300 font-medium text-md pl-2 drop-shadow-md">
+                also I take cool photos.
+              </h2>
+            </div>
           </div>
-          <div className="rounded-3xl bg-flower bg-cover bg-center m-2 w-48 h-[25rem] -translate-y-[13rem]">
-            <h2 className="text-stone-300 font-medium text-md pl-2 pt-2 drop-shadow-md">
-              Oh yeah,
-            </h2>
-            <h2 className="text-stone-300 font-medium text-md pl-2 drop-shadow-md">
-              also I take cool photos.
-            </h2>
-          </div>
-          <div className="frostedGlass w-48 h-48 flex justify-center items-center">
+
+          <div
+            className="frostedGlass w-48 h-48 flex justify-center items-center"
+            data-aos="flip-right"
+            data-aos-once="false"
+            data-aos-delay="700"
+            data-aos-mirror="false"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -119,7 +169,15 @@ export default function About() {
               />
             </svg>
           </div>
-          <div className="frostedGlass w-48 h-48 flex justify-center items-center">
+          <div
+            className="frostedGlass w-48 h-48 flex justify-center items-center"
+            data-aos="flip-right"
+            data-aos-once="false"
+            data-aos-delay="900"
+            data-aos-mirror="false"
+            data-aos-duration="1000"
+            data-aos-easing="ease-in-out"
+          >
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
