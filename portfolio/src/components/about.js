@@ -7,7 +7,7 @@ export default function About() {
       className="bg-aboutBack w-screen h-screen bg-cover flex justify-center items-center"
     >
       <div className="container h-4/6">
-        <div className="flex flex-wrap flex-row justify-center items-start">
+        <div className="flex flex-wrap flex-row justify-center items-start select-none">
           <div
             className="w-48 h-48 flex justify-center items-center frostedGlass"
             data-aos="flip-right"
@@ -15,11 +15,13 @@ export default function About() {
             data-aos-delay="100"
             data-aos-mirror="false"
             data-aos-duration="1000"
+            data-aos-easeing="ease-in-out"
           >
             <h1 className="IBMPlexMonoItalicMedium text-center text-7xl p-5 drop-shadow-whiteShadow">
               fx
             </h1>
           </div>
+
           <div
             className="w-[25rem] h-48 frostedGlass flex flex-col justify-center items-start"
             data-aos="flip-right"
@@ -39,6 +41,7 @@ export default function About() {
               Superpower!
             </h1>
           </div>
+
           <div
             className="w-[25rem] h-[25rem] frostedGlass"
             data-aos="flip-right"
@@ -60,6 +63,7 @@ export default function About() {
               </h2>
             </div>
           </div>
+
           <div className="flex -mt-[13rem]">
             <div
               className="w-[25rem] h-[25rem] frostedGlass"
@@ -96,6 +100,7 @@ export default function About() {
                 </div>
               </div>
             </div>
+
             <div
               className="rounded-3xl bg-flower bg-cover bg-center m-2 w-48 h-[25rem]"
               data-aos="flip-right"
@@ -125,6 +130,7 @@ export default function About() {
           >
             <p className="text-9xl">🕹️</p>
           </div>
+
           <div
             className="frostedGlass w-48 h-48 flex justify-center items-center"
             data-aos="flip-right"

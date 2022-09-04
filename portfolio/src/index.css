@@ -21,6 +21,10 @@ body {
   margin: 0.5rem;
 }
 
+.frostedGlass:hover {
+  cursor: default;
+}
+
 .IBMPlexMonoItalicMedium {
   font-family: "IBM Plex Mono", monospace;
   font-style: italic;
@@ -35,4 +39,15 @@ body {
   );
   background-clip: text;
   color: transparent;
+}
+
+#card {
+  padding: 0 !important;
+  margin: 0.5rem !important;
+  width: 12rem !important;
+  height: 12rem !important;
+  background: none !important;
+  box-sizing: border-box !important;
+  box-shadow: none !important;
+  border: none !important;
 }
