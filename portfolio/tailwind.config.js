@@ -7,6 +7,7 @@ module.exports = {
         aboutBack: "url('../public/aboutBack.svg')",
         flower: "url('../public/flower.webp')",
         projectsTemporaryBack: "url('../public/projectsBack.svg')",
+        homeBack: "url('../public/homeBack.svg')",
       },
 
       dropShadow: {
