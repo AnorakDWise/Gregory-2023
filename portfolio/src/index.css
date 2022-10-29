@@ -7,6 +7,8 @@
 body {
   margin: 0;
   font-family: "IBM Plex Sans", sans-serif;
+  --tw-text-opacity: 1;
+  color: rgb(231 229 228 / var(--tw-text-opacity));
 }
 
 .container {
@@ -14,44 +16,113 @@ body {
   margin: 0 auto;
 }
 
+.animate {
+  transition: 0.2s ease-in-out all;
+}
+
+.animateSwift {
+  transition: 0.1s ease-in-out all;
+}
+
+.animate:hover {
+  transition: 0.2s ease-in-out all;
+}
+
 .frostedGlass {
   background-color: rgba(231, 229, 228, 0.25);
-  backdrop-filter: blur(12px);
-  border-radius: 1.5rem;
-  margin: 0.5rem;
+  backdrop-filter: blur(50px);
+}
+
+.frostedBorder {
+  border: 0.11vw solid rgba(231, 229, 228, 0.15);
+}
+
+.tile {
+  width: 12.5vw;
+  height: 12.5vw;
+  border-radius: 1vw;
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.absoluteCenter {
+  margin: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.doubleTileH {
+  width: 25.5vw;
+  height: 12.5vw;
+  border-radius: 1vw;
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.doubleTileV {
+  width: 12.5vw;
+  height: 25.5vw;
+  border-radius: 1vw;
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.quadTile {
+  width: 25.5vw;
+  height: 25.5vw;
+  border-radius: 1vw;
+  --tw-drop-shadow: drop-shadow(0 20px 13px rgb(0 0 0 / 0.03))
+    drop-shadow(0 8px 5px rgb(0 0 0 / 0.08));
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast)
+    var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate)
+    var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .frostedGlass:hover {
   cursor: default;
 }
 
-.IBMPlexMonoItalicMedium {
-  font-family: "IBM Plex Mono", monospace;
-  font-style: italic;
-  font-weight: medium;
-  background-image: linear-gradient(
-    to left top,
-    #e5e5e5,
-    #e1e0e1,
-    #dedcdc,
-    #dad7d7,
-    #d6d3d1
-  );
-  background-clip: text;
-  color: transparent;
+.superpower {
+  -webkit-text-stroke: 0.1vw rgba(8, 145, 178, 1);
 }
 
-#rotate {
-  transform: rotateX(15deg);
-  transition: all 100ms ease-in-out;
+.parent:hover .superpower {
+  -webkit-text-stroke: 0.1vw rgba(8, 145, 178, 0);
 }
 
-#rotate:hover {
-  transform: rotateX(5deg);
-  transition: ease-in-out 100ms all;
+button:hover {
+  cursor: pointer !important;
 }
 
-.new {
-  color: #facc15;
-  filter: drop-shadow(0 0 10px rgba(250, 204, 21, 0.75));
+.bg-flower:hover {
+  background-size: 185%;
+  transition: background-size 0.2s ease-in-out;
+}
+
+.bg-flower {
+  background-size: 160%;
+  transition: background-size 0.2s ease-in-out;
+  filter: none !important;
+}
+
+.delayedTransition {
+  transition: 0.4s ease-in-out opacity 1s;
 }

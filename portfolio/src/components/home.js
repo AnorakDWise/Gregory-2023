@@ -1,15 +1,17 @@
-export default function Home() {
+const Home = () => {
   return (
     <section
       id="home"
-      className="bg-homeBack w-screen h-screen bg-cover flex justify-center items-center m-auto"
+      className="bg-homeBack w-screen h-screen bg-contain bg-no-repeat center flex-col m-aut0 select-none"
     >
-      <div className="">
-        <h1 className="text-7xl font-medium text-stone-200">Gregory Buffard</h1>
-        <h2 className="text-center text-stone-300 font-medium font-5xl">
-          web-app dev / web-design
-        </h2>
-      </div>
+      <h1 className="text-title font-medium drop-shadow-2xl">
+        Gregory Buffard
+      </h1>
+      <h2 className="text-subtitle uppercase frostedGlass font-normal px-[0.5vw] py-[0.5vh] rounded-easy hover:drop-shadow-softLight animate frostedBorder drop-shadow-xl tracking-widest">
+        co-founder / software engineer
+      </h2>
     </section>
   );
-}
+};
+
+export default Home;

@@ -1,19 +1,19 @@
 import Home from "./components/home";
-import navbar from "./components/navbar";
+import Navbar from "./components/navbar";
 import About from "./components/about";
 import Projects from "./components/projects";
-import skills from "./components/skills";
-import contact from "./components/contact";
+import Skills from "./components/skills";
+import Contact from "./components/contact";
 
 function App() {
   return (
-    <main className="overflow-x-hidden">
-      <home />
-      <navbar />
+    <main className="overflow-x-hidden bg-gradient-to-tr from-stone-900 to-stone-600">
+      <Home />
+      <Navbar />
       <About />
       <Projects />
-      <skills />
-      <contact />
+      <Skills />
+      <Contact />
     </main>
   );
 }

@@ -1,161 +1,144 @@
-import React from "react";
+import React, { useState } from "react";
+import keyboard from "../assets/iconography/keyboard.svg";
+import bulb from "../assets/iconography/bulb.svg";
 
-export default function About() {
+const About = () => {
+  const [tip, setTip] = useState(
+    "center w-max fixed z-10 top-[5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight animate opacity-0 delay-1000"
+  );
+
   return (
     <section
       id="about"
-      className="bg-aboutBack w-screen h-screen bg-cover flex justify-center items-center"
+      className="bg-aboutBack w-screen h-screen bg-cover center"
     >
-      <div className="container h-4/6">
-        <div className="flex flex-wrap flex-row justify-center items-start select-none">
-          <div
-            className="w-48 h-48 flex flex-col justify-center items-center frostedGlass border-solid border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:drop-shadow-mathShadow hover:border-stone-200 group"
-            id="rotate"
-            data-aos="flip-right"
-            data-aos-once="false"
-            data-aos-delay="100"
-            data-aos-mirror="false"
-            data-aos-duration="1000"
-            data-aos-easeing="ease-in-out"
+      <div className={tip}>
+        <img src={bulb} className="w-[2vw] mr-[0.5vw] drop-shadow-bulbLight" />
+        <h4 className="text-plain font-medium text-stone-200 drop-shadow-xl">
+          Click a tile to learn more.
+        </h4>
+      </div>
+      <div className="w-[38.5vw] h-[38.5vw] mr-[0.25vw] center flex-col">
+        <div className="w-full h-[12.5vw] mb-[0.25vw] center">
+          <button
+            className="tile frostedGlass frostedBorder mr-[0.25vw] center text-title italic font-medium hover:drop-shadow-softLight animate"
+            onMouseEnter={() =>
+              setTip(
+                "center w-max fixed z-10 top-[2.5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight delayedTransition opacity-100 delay-1000"
+              )
+            }
+            onMouseLeave={() =>
+              setTip(
+                "center w-max fixed z-10 top-[5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight animate opacity-0 delay-0"
+              )
+            }
           >
-            <h1 className="IBMPlexMonoItalicMedium text-center text-8xl -mt-4 p-5 drop-shadow-whiteShadow">
-              f<span className="text-6xl">x</span>
-            </h1>
-          </div>
+            fx
+          </button>
 
-          <div
-            className="w-[25rem] h-48 frostedGlass flex flex-col justify-center items-start border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:"
-            data-aos="flip-right"
-            data-aos-once="false"
-            data-aos-delay="300"
-            data-aos-mirror="false"
-            id="rotate"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+          <button
+            className="doubleTileH frostedGlass frostedBorder ml-[0.25vw] center group parent"
+            onMouseEnter={() =>
+              setTip(
+                "center w-max fixed z-10 top-[2.5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight delayedTransition opacity-100 delay-1000"
+              )
+            }
+            onMouseLeave={() =>
+              setTip(
+                "center w-max fixed z-10 top-[5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight animate opacity-0 delay-0"
+              )
+            }
           >
-            <p className="absolute text-[10rem] w-min left-0 right-0 mx-auto -mt-10 -rotate-12">
-              ⌨️
-            </p>
-            <h2 className="p-5 font-medium text-xl text-stone-300 -mt-16">
+            <img
+              src={keyboard}
+              className="w-[10vw] group-hover:w-[11vw] animate absoluteCenter -rotate-12 drop-shadow-xl group-hover:drop-shadow-2xl brightness-75 group-hover:brightness-100"
+            />
+            <h4 className="absolute z-10 top-[2vh] left-[1vw] text-plain font-medium text-stone-200">
               coding is my...
-            </h2>
-            <h1 className="text-center font-bold text-5xl bg-gradient-to-t from-[#596e77] to-[#69828f] bg-clip-text text-transparent drop-shadow-superpowerShadow mx-auto">
+            </h4>
+            <h3 className="z-10 text-huge font-bold italic superpower bg-gradient-to-t from-sky-800 to-teal-500 bg-clip-text text-stone-900 text-opacity-25 group-hover:text-opacity-0 animate px-[1vw] drop-shadow-xl">
               Superpower!
-            </h1>
-          </div>
+            </h3>
+          </button>
+        </div>
+        <div className="w-full h-[25.5vw] mt-[0.25vw] center">
+          <button
+            className="quadTile frostedGlass frostedBorder mr-[0.25vw]"
+            onMouseEnter={() =>
+              setTip(
+                "center w-max fixed z-10 top-[2.5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight delayedTransition opacity-100 delay-1000"
+              )
+            }
+            onMouseLeave={() =>
+              setTip(
+                "center w-max fixed z-10 top-[5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight animate opacity-0 delay-0"
+              )
+            }
+          ></button>
 
-          <div
-            className="w-[25rem] h-[25rem] frostedGlass border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:"
-            data-aos="flip-right"
-            data-aos-once="false"
-            id="rotate"
-            data-aos-delay="500"
-            data-aos-mirror="false"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
+          <button
+            className="doubleTileV bg-flower bg-cover bg-center ml-[0.25vw] center group"
+            onMouseEnter={() =>
+              setTip(
+                "center w-max fixed z-10 top-[2.5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight delayedTransition opacity-100 delay-1000"
+              )
+            }
+            onMouseLeave={() =>
+              setTip(
+                "center w-max fixed z-10 top-[5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight animate opacity-0 delay-0"
+              )
+            }
           >
-            <p className="absolute m-auto left-0 right-0 top-0 bottom-0 h-min w-min text-9xl mb-24">
-              🤖
-            </p>
-            <div className="flex flex-col justify-center align-center w-full h-full -mt-16">
-              <h1 className="text-center font-medium text-xl text-stone-300">
-                You like Machine Learning?
-              </h1>
-              <h2 className="text-center font-bold text-5xl bg-gradient-to-r from-rose-600 to-rose-900 bg-clip-text text-transparent drop-shadow-machineLearningShadow">
-                coz I love it..
-              </h2>
-            </div>
-          </div>
+            <div className="w-full h-full rounded-[1vw] bg-gradient-to-b from-transparent to-stone-900 opacity-0 group-hover:opacity-100 animate drop-shadow-xl backdrop-blur-sm"></div>
+          </button>
+        </div>
+      </div>
+      <div className="w-[25.5vw] h-[38.5vw] ml-[0.25vw] center flex-col">
+        <button
+          className="quadTile frostedGlass frostedBorder mb-[0.25vw]"
+          onMouseEnter={() =>
+            setTip(
+              "center w-max fixed z-10 top-[2.5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight delayedTransition opacity-100 delay-1000"
+            )
+          }
+          onMouseLeave={() =>
+            setTip(
+              "center w-max fixed z-10 top-[5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight animate opacity-0 delay-0"
+            )
+          }
+        ></button>
+        <div className="w-[25.5vw] h-[12.5vw] mt-[0.25vw] center">
+          <button
+            className="tile frostedGlass frostedBorder mr-[0.25vw]"
+            onMouseEnter={() =>
+              setTip(
+                "center w-max fixed z-10 top-[2.5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight delayedTransition opacity-100 delay-1000"
+              )
+            }
+            onMouseLeave={() =>
+              setTip(
+                "center w-max fixed z-10 top-[5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight animate opacity-0 delay-0"
+              )
+            }
+          ></button>
 
-          <div className="flex -mt-[13rem]">
-            <div
-              className="w-[25rem] h-[25rem] frostedGlass border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:"
-              data-aos="flip-right"
-              data-aos-once="false"
-              id="rotate"
-              data-aos-delay="300"
-              data-aos-mirror="false"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-            >
-              <p className="absolute opacity-60 text-[13rem] w-min h-min m-auto -mt-16 -mr-6 left-0 right-0 top-0 bottom-0">
-                🎓
-              </p>
-              <div className="flex flex-col justify-center items-center h-full w-full relative">
-                <h1 className="text-2xl font-medium pb-2 text-stone-900">
-                  always trying to learn
-                </h1>
-                <div>
-                  <h2 className="text-3xl font-medium text-stone-900">
-                    <span className="new">New</span> experiences
-                  </h2>
-                  <h2 className="text-3xl font-medium text-stone-900 opacity-80">
-                    <span className="new">New</span> exciting things
-                  </h2>
-                  <h2 className="text-3xl font-medium text-stone-900 opacity-60">
-                    <span className="new">New</span> superpowers
-                  </h2>
-                  <h2 className="text-3xl font-medium text-stone-900 opacity-40">
-                    <span className="new">New</span> skills
-                  </h2>
-                  <h2 className="text-3xl font-medium bg-gradient-to-t from-transparent to-[#1c19173b] text-transparent bg-clip-text">
-                    <span className="bg-gradient-to-t from-transparent to-[#facc15bf] bg-clip-text">
-                      New
-                    </span>
-                    habits
-                  </h2>
-                </div>
-              </div>
-            </div>
-
-            <div
-              className="rounded-3xl bg-flower bg-cover bg-center m-2 w-48 h-[25rem] border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:"
-              data-aos="flip-right"
-              data-aos-once="false"
-              id="rotate"
-              data-aos-delay="500"
-              data-aos-mirror="false"
-              data-aos-duration="1000"
-              data-aos-easing="ease-in-out"
-            >
-              <h2 className="text-stone-300 font-medium text-md pl-2 pt-2 drop-shadow-md -mb-1">
-                Oh yeah,
-              </h2>
-              <h2 className="text-stone-300 font-medium text-md pl-2 drop-shadow-md">
-                also I take cool photos.
-              </h2>
-            </div>
-          </div>
-
-          <div
-            className="frostedGlass w-48 h-48 flex justify-center items-center border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:"
-            data-aos="flip-right"
-            data-aos-once="false"
-            data-aos-delay="700"
-            data-aos-mirror="false"
-            id="rotate"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
-            <p className="text-9xl">🕹️</p>
-          </div>
-
-          <div
-            className="frostedGlass w-48 h-48 flex justify-center items-center border-b-8 border-stone-700 hover:border-b-2 hover:cursor-pointer hover:"
-            data-aos="flip-right"
-            data-aos-once="false"
-            id="rotate"
-            data-aos-delay="900"
-            data-aos-mirror="false"
-            data-aos-duration="1000"
-            data-aos-easing="ease-in-out"
-          >
-            <div className="text-9xl rounded-3xl bg-white w-[128px] bg-clip-text overflow-clip flex justify-center items-center">
-              ⛵
-            </div>
-          </div>
+          <button
+            className="tile frostedGlass frostedBorder ml-[0.25vw]"
+            onMouseEnter={() =>
+              setTip(
+                "center w-max fixed z-10 top-[2.5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight delayedTransition opacity-100 delay-1000"
+              )
+            }
+            onMouseLeave={() =>
+              setTip(
+                "center w-max fixed z-10 top-[5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight animate opacity-0 delay-0"
+              )
+            }
+          ></button>
         </div>
       </div>
     </section>
   );
-}
+};
+
+export default About;

@@ -2,20 +2,28 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
+    fontSize: {
+      title: "4vw",
+      huge: "3.5vw",
+      subtitle: "1.25vw",
+      plain: "1vw",
+    },
+
+    borderRadius: {
+      easy: "1vw",
+    },
+
     extend: {
       backgroundImage: {
-        aboutBack: "url('../public/aboutBack.svg')",
-        flower: "url('../public/flower.webp')",
-        projectsTemporaryBack: "url('../public/projectsBack.svg')",
-        homeBack: "url('../public/homeBack.svg')",
+        aboutBack: "url('./assets/graphics/aboutCurve.svg')",
+        flower: "url('./assets/graphics/flower.webp')",
+        homeBack: "url('./assets/graphics/homeCurve.svg')",
       },
 
       dropShadow: {
-        superpowerShadow: "0 0 10px rgba(124, 144, 153, 0.5)",
-        machineLearningShadow: "0 0 10px rgba(136, 19, 55, 0.75)",
-        whiteShadow: "0 0 10px #e7e5e480",
-        mathShadow: "0 0 30px rgba(231, 229, 228, 0.5)",
+        softLight: "0 10px 10px rgba(231, 229, 228, 0.5)",
         projectsTemporaryShadow: "0 0 10px rgba(248, 113, 113, 0.75)",
+        bulbLight: "0 0 10px rgba(255, 212, 24, 0.5)",
       },
     },
   },
