@@ -7,8 +7,8 @@ import contact from "./components/contact";
 
 function App() {
   return (
-    <main>
-      <Home />
+    <main className="overflow-x-hidden">
+      <home />
       <navbar />
       <About />
       <Projects />
