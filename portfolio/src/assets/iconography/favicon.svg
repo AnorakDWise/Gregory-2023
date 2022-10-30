@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="500" height="500" viewBox="0 0 500 500">
+  <defs>
+    <clipPath id="clip-favicon">
+      <rect width="500" height="500"/>
+    </clipPath>
+  </defs>
+  <g id="favicon" clip-path="url(#clip-favicon)">
+    <rect id="Rectangle_16" data-name="Rectangle 16" width="400" height="400" rx="100" transform="translate(50 50)" fill="#1c1917"/>
+    <text id="GB" transform="translate(250 325)" fill="#e7e5e4" font-size="200" font-family="IBMPlexSans-Medm, IBM Plex Sans"><tspan x="-136.4" y="0">GB</tspan></text>
+  </g>
+</svg>
