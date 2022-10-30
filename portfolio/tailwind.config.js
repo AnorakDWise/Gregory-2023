@@ -5,6 +5,7 @@ module.exports = {
     fontSize: {
       title: "4vw",
       huge: "3.5vw",
+      big: "2.25vw",
       subtitle: "1.25vw",
       plain: "1vw",
     },

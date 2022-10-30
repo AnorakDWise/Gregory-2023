@@ -104,6 +104,14 @@ body {
   -webkit-text-stroke: 0.1vw rgba(8, 145, 178, 1);
 }
 
+.knowledge {
+  -webkit-text-stroke: 0.1vw rgba(217, 119, 6, 1);
+}
+
+button:hover .knowledge {
+  -webkit-text-stroke: 0.1vw rgba(217, 119, 6, 0);
+}
+
 .parent:hover .superpower {
   -webkit-text-stroke: 0.1vw rgba(8, 145, 178, 0);
 }
@@ -125,4 +133,14 @@ button:hover {
 
 .delayedTransition {
   transition: 0.4s ease-in-out opacity 1s;
+}
+
+.gradientText {
+  color: transparent;
+  background-clip: text;
+}
+
+.lowVisibleText:hover {
+  font-size: 2vw;
+  opacity: 1;
 }
