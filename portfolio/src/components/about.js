@@ -8,17 +8,18 @@ import calc from "../assets/iconography/calc.svg";
 import bookPile from "../assets/iconography/bookPile.svg";
 import closedBook from "../assets/iconography/closedBook.svg";
 import journal from "../assets/iconography/journal.svg";
+import sketchLine from "../assets/graphics/sketchLine.svg";
 
 const About = () => {
   const [tip, setTip] = useState(
     "center w-max fixed z-10 top-[5vh] frostedGlass frostedBorder rounded-easy px-[0.5vw] py-[0.5vh] drop-shadow-softLight animate opacity-0 delay-1000"
   );
 
-  const [text1, setText1] = useState("text-[2vw]"),
-    [text2, setText2] = useState("text-[1.75vw]"),
-    [text3, setText3] = useState("text-[1.5vw]"),
-    [text4, setText4] = useState("text-[1.25vw]"),
-    [text5, setText5] = useState("text-[1vw]");
+  const [text1, setText1] = useState("text-[2vw]  drop-shadow-md"),
+    [text2, setText2] = useState("text-[1.75vw]  drop-shadow-md"),
+    [text3, setText3] = useState("text-[1.5vw]  drop-shadow-md"),
+    [text4, setText4] = useState("text-[1.25vw]  drop-shadow-md"),
+    [text5, setText5] = useState("text-[1vw]  drop-shadow-md");
 
   return (
     <section
@@ -88,29 +89,34 @@ const About = () => {
               )
             }
           >
-            <h3 className="bg-gradient-to-t from-amber-600 to-amber-500 text-stone-800 text-opacity-25 group-hover:text-opacity-0 knowledge bg-clip-text text-big font-semibold drop-shadow-2xl animate mt-[2.5vh]">
+            <h3 className="bg-gradient-to-t from-amber-600 to-amber-500 text-stone-800 text-opacity-25 group-hover:text-opacity-0 knowledge bg-clip-text text-big font-semibold drop-shadow-md group-hover:drop-shadow-lg animate mt-[5vh]">
               Addicted to acquire
             </h3>
-            <div>
+            <div className="font-medium">
               <h4
-                className={"lowVisibleText animate " + text1}
+                className={
+                  "lowVisibleText animate hover:drop-shadow-lg " + text1
+                }
                 onMouseEnter={() =>
-                  setText2("text-[1vw]") +
-                  setText3("text-[1vw]") +
-                  setText4("text-[1vw]") +
-                  setText5("text-[1vw]")
+                  setText2("text-[1vw] drop-shadow-sm") +
+                  setText3("text-[1vw] drop-shadow-sm") +
+                  setText4("text-[1vw] drop-shadow-sm") +
+                  setText5("text-[1vw] drop-shadow-sm")
                 }
                 onMouseLeave={() =>
-                  setText2("text-[1.75vw]") +
-                  setText3("text-[1.5vw]") +
-                  setText4("text-[1.25vw]") +
-                  setText5("text-[1vw]")
+                  setText2("text-[1.75vw] drop-shadow-md") +
+                  setText3("text-[1.5vw] drop-shadow-md") +
+                  setText4("text-[1.25vw] drop-shadow-md") +
+                  setText5("text-[1vw] drop-shadow-md")
                 }
               >
                 New experiences
               </h4>
               <h4
-                className={"lowVisibleText animate opacity-75 " + text2}
+                className={
+                  "lowVisibleText animate opacity-75 hover:drop-shadow-lg " +
+                  text2
+                }
                 onMouseEnter={() =>
                   setText1("text-[1vw]") +
                   setText3("text-[1vw]") +
@@ -127,7 +133,10 @@ const About = () => {
                 New superpowers
               </h4>
               <h4
-                className={"lowVisibleText animate opacity-50 " + text3}
+                className={
+                  "lowVisibleText animate opacity-50 hover:drop-shadow-lg " +
+                  text3
+                }
                 onMouseEnter={() =>
                   setText2("text-[1vw]") +
                   setText1("text-[1vw]") +
@@ -144,7 +153,10 @@ const About = () => {
                 New connections
               </h4>
               <h4
-                className={"lowVisibleText animate opacity-25 " + text4}
+                className={
+                  "lowVisibleText animate opacity-25 hover:drop-shadow-lg " +
+                  text4
+                }
                 onMouseEnter={() =>
                   setText2("text-[1vw]") +
                   setText3("text-[1vw]") +
@@ -161,7 +173,10 @@ const About = () => {
                 New knowledge
               </h4>
               <h4
-                className={"lowVisibleText animate opacity-10 " + text5}
+                className={
+                  "lowVisibleText animate opacity-10 hover:drop-shadow-lg " +
+                  text5
+                }
                 onMouseEnter={() =>
                   setText2("text-[1vw]") +
                   setText3("text-[1vw]") +
@@ -221,7 +236,15 @@ const About = () => {
               )
             }
           >
-            <div className="w-full h-full rounded-[1vw] bg-gradient-to-b from-transparent to-stone-900 opacity-0 group-hover:opacity-100 animate drop-shadow-xl backdrop-blur-sm"></div>
+            <div className="w-full h-full rounded-[1vw] bg-gradient-to-b from-transparent to-stone-900 opacity-0 group-hover:opacity-100 animate drop-shadow-xl backdrop-blur-sm flex flex-col justify-end items-start">
+              <h4 className="text-plain font-light -mb-[0.5vw] ml-[0.75vw] animate group-hover:translate-y-0 translate-y-[4vh] group-hover:opacity-100 opacity-0 group-hover:delay-200">
+                oh, btw...
+              </h4>
+              <h3 className="font-medium text-big mb-[3vh] text-left ml-[0.75vw] leading-none animate group-hover:translate-x-0 translate-x-[1vw] group-hover:opacity-100 opacity-0 group-hover:delay-500">
+                I take <span className="italic font-bold">cool</span> photos.
+              </h3>
+              <div className="absolute rotate-6 bottom-[2.25vw] right-[0.75vw] w-[0vw] group-hover:w-[5vw] h-[5vh] bg-sketchLine bg-right bg-[length:200%] group-hover:bg-[length:100%] transition-all group-hover:transition-all duration-300 group-hover:delay-1000 ease-in-out group-hover:ease-in-out group-hover:duration-300 bg-no-repeat drop-shadow-softLight"></div>
+            </div>
           </button>
         </div>
       </div>

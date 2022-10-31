@@ -19,6 +19,7 @@ module.exports = {
         aboutBack: "url('./assets/graphics/aboutCurve.svg')",
         flower: "url('./assets/graphics/flower.webp')",
         homeBack: "url('./assets/graphics/homeCurve.svg')",
+        sketchLine: "url('./assets/graphics/sketchLine.svg')",
       },
 
       dropShadow: {
