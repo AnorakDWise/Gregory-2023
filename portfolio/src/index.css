@@ -16,6 +16,10 @@ body {
   margin: 0 auto;
 }
 
+.easlyAnimate {
+  transition: all 0.5s ease-in-out;
+}
+
 .animate {
   transition: 0.2s ease-in-out all;
 }

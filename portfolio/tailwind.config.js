@@ -26,6 +26,7 @@ module.exports = {
         softLight: "0 10px 10px rgba(231, 229, 228, 0.5)",
         projectsTemporaryShadow: "0 0 10px rgba(248, 113, 113, 0.75)",
         bulbLight: "0 0 10px rgba(255, 212, 24, 0.5)",
+        loveShadow: "0 10px 10px rgb(79 70 229 / 0.75)",
       },
     },
   },
